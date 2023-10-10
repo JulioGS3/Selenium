@@ -1,1 +1,19 @@
-system.log
+#ignoramos los ficheros .log
+*.log
+!system.log
+
+#todo o q empece en l e termine e g sera ignorado
+l*g
+#ignorar o q hai na carpeta class, a barra indica que e unha carpeta
+class/
+#ignora alog, blog e clog, cada unha das que vai entre corchetes
+[abc]log
+#ignora todo o q empece por log ou solo log
+log*
+#ignora solo un caracter,ejem. fichero_a.txt
+ficheiro_?.txt
+#ignora de 0 a 9...
+fichero_[0-9].txt
+#ignorar directorios anidados, no 1 obvia o do medio** e ignora o main
+class/**/main
+
